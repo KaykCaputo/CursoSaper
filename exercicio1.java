@@ -33,8 +33,8 @@ class Exercicios {
             Scanner input = new Scanner(System.in);
             System.out.println(" Digite tamanho da barra: ");
             double comprimento = input.nextDouble();
-            double pedacosInteiros = comprimento / 5;
-            System.out.printf("A barra pode ser cortada em %.0f vezes em pedaços de 5 metros", pedacosInteiros);
+            System.out.printf("A barra pode ser cortada  %.0f vezes  e sobram %.2fmetros \n", comprimento / 5,
+                    comprimento % 5);
             input.close();
         } catch (Exception error) {
             System.out.println("Ocorreu um erro \n Erro: " + error);
