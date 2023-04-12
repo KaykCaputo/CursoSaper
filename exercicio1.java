@@ -11,20 +11,34 @@ class Exercicios {
         System.out.println(
                 " b)Qual a velocidade média de Jõao em kilometros por hora?\n   R:Jõao correu em uma velocidade media de: "
                         + (metros / 1000) / (minutos / 60) + "Km/h\n");
-        // Exercicio 2
-        System.out.println("||Exercicio 2:|| \n+Sistema de soma+");
+        /*
+         * // Exercicio 2
+         * System.out.println("||Exercicio 2:|| \n+Sistema de soma+");
+         * try {
+         * Scanner input = new Scanner(System.in);
+         * System.out.println(" Digite o primeiro número: ");
+         * int number1 = input.nextInt();
+         * System.out.println(" Digite o segundo número: ");
+         * int number2 = input.nextInt();
+         * System.out.println(" Soma = " + (number1 + number2) + "\n");
+         * input.close();
+         * } catch (Exception error) {
+         * System.out.println("Ocorreu um erro \n Erro: " + error);
+         * 
+         * }
+         */
+        // Exercicio 3
+        System.out.println("||Exercicio 3:||");
         try {
             Scanner input = new Scanner(System.in);
-            System.out.println(" Digite o primeiro número: ");
-            int number1 = input.nextInt();
-            System.out.println(" Digite o segundo número: ");
-            int number2 = input.nextInt();
-            System.out.println(" Soma = " + (number1 + number2) + "\n");
+            System.out.println(" Digite tamanho da barra: ");
+            double comprimento = input.nextDouble();
+            double pedacosInteiros = comprimento / 5;
+            System.out.printf("A barra pode ser cortada em %.0f vezes em pedaços de 5 metros", pedacosInteiros);
             input.close();
         } catch (Exception error) {
             System.out.println("Ocorreu um erro \n Erro: " + error);
 
         }
-
     }
 }
