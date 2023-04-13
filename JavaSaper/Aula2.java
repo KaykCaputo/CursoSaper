@@ -5,10 +5,16 @@ public class Aula2 {
 
     // Aula2
     Scanner input = new Scanner(System.in);
-    exercicio1(input);
-    exercicio2(input);
-    exercicio3(input);
-    exercicio4(input);
+    System.out.println("|Escreva um numero de 1 a 4 para selecionar o exercicio||");
+    if (input.nextInt() == 1) {
+      exercicio1(input);
+    } else if (input.nextInt() == 2) {
+      exercicio2(input);
+    } else if (input.nextInt() == 3) {
+      exercicio3(input);
+    } else if (input.nextInt() == 4) {
+      exercicio4(input);
+    }
 
     input.close();
 
