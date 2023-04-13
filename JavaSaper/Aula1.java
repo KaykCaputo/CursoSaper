@@ -1,7 +1,13 @@
+
 import java.util.Scanner;
 
-class Exercicios {
+class Aula1 {
     public static void main(String args[]) {
+        exercicio1();
+        exercicio2();
+    }
+
+    private static void exercicio1() {
         // Exercicio 1
         float metros = 1260f, minutos = 4f;
         System.out.println("||Exercicio 1:||");
@@ -11,6 +17,9 @@ class Exercicios {
         System.out.println(
                 " b)Qual a velocidade média de Jõao em kilometros por hora?\n   R:Jõao correu em uma velocidade media de: "
                         + (metros / 1000) / (minutos / 60) + "Km/h\n");
+    }
+
+    private static void exercicio2() {
         // Exercicio 2
         System.out.println("||Exercicio 2:||");
         System.out.println(
