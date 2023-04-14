@@ -4,16 +4,15 @@ public class Aula3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Escolha o exercicio de 1 a 3");
-        if (input.nextInt() == 1) {
-            exercicio1(input);
-        } else if (input.nextInt() == 2) {
-            exercicio2(input);
-        }else if (input.nextInt() == 3) {
-            exercicio3(input);
+        switch (input.nextInt()) {
+            case 1 -> exercicio1(input);
+            case 2 -> exercicio2(input);
+            case 3 -> exercicio3(input);
         }
         input.close();
 
     }
+
 
     private static void exercicio1(Scanner input) {
         System.out.println("||EXERCICIO 1||");
@@ -40,6 +39,7 @@ public class Aula3 {
             System.out.printf("Ocorreu um erro \n Err0:" + e + "\n");
         }
     }
+
     private static void exercicio3(Scanner input) {
         System.out.println("||EXERCICIO 3||");
         try {
@@ -47,14 +47,15 @@ public class Aula3 {
             double salario = input.nextDouble();
             System.out.println("Digite o numero de vendas do vendedor:");
             double vendas = input.nextDouble();
-            if(salario<1500&&vendas>2000){
-                System.out.printf("O Vendededor recebeu um aumento \n Salario pos aumento: %.2f", salario/(salario*0.1));
-            }else{
+            if (salario < 1500 && vendas > 2000) {
+                System.out.printf("O Vendededor recebeu um aumento \n Salario pos aumento: %.2f", salario / (salario * 0.1));
+            } else {
                 System.out.println("O vendedor não recebeu um aumento... :(");
             }
-            
+
         } catch (Exception e) {
             System.out.printf("Ocorreu um erro \n Err0:" + e + "\n");
         }
     }
 }
+
