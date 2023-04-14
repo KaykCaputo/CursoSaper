@@ -4,12 +4,14 @@ import java.util.Scanner;
 class Aula1 {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
-        System.out.println("|Escreva um numero de 1 a 4 para selecionar o exercicio||");
+        System.out.println("|Escreva um numero de 1 a 2 para selecionar o exercicio||");
         if (input.nextInt() == 1) {
             exercicio1();
         } else if (input.nextInt() == 2) {
             exercicio2();
         }
+
+        input.close();
 
     }
 

@@ -27,23 +27,10 @@
         },
         {
             "type": "java",
-            "name": "Aula2Java",
-            "request": "launch",
-            "mainClass": "Aula2Java",
-            "projectName": "Projeto1Saper_d7056796"
-        },
-        {
-            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
         },
-        {
-            "type": "java",
-            "name": "Exercicios1",
-            "request": "launch",
-            "mainClass": "Aula1Saper.Exercicios1",
-            "projectName": "Projeto1Saper_d7056796"
-        }
+           
     ]
 }
