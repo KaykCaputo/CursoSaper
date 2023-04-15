@@ -44,7 +44,7 @@ public class Aula4 {
             Double saldoCliente = inputNum.nextDouble();
             cliente.setName(nomeCliente);
             cliente.setSaldo(saldoCliente);
-            System.out.printf("Seu nome é: " + cliente.getName() + "\n e seu saldo é: R$" + cliente.getSaldo());
+            System.out.printf("Seu nome é: " + cliente.getName() + "\n seu saldo é: R$" + cliente.getSaldo());
         } catch (Exception e) {
             System.out.printf("Ocorreu um erro \n Err0:" + e + "\n");
         }
