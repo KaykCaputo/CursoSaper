@@ -33,6 +33,7 @@ public class Aula4 {
             System.out.printf("Ocorreu um erro \n Err0:" + e + "\n");
         }
     }
+
     private static void exercicio2(Scanner inputNum, Scanner inputStr) {
         System.out.println("||EXERCICIO 2||");
         Conta cliente = new Conta();
