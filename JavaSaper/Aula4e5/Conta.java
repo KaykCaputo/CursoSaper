@@ -6,9 +6,9 @@ public class Conta {
 
     public Conta(String nomeInicial, double saldoInicial){
         if(nomeInicial!=null && saldoInicial>=0){
-            name = nomeInicial;
-            saldo = saldoInicial;
-        }else{saldo=0;name="AccountName";}
+            this.name = nomeInicial;
+            this.saldo = saldoInicial;
+        }else{this.saldo=0;this.name="AccountName";}
     }
 
     public String getName() {
