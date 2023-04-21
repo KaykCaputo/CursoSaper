@@ -30,8 +30,6 @@ public class Data {
                     day=_day;
                 }
             }
-
-
         }else {
             System.out.println("A data é invalida!, data sera definida para os valores padrão");
             this.day = 1;
