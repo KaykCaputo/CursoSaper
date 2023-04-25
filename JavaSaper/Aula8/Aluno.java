@@ -22,7 +22,10 @@ public class Aluno {
     }
 
     public void setMedia(Double _media) {
-        this.media = _media;
+        if(_media >0 && _media<=100){
+            this.media = _media;
+        }
+        return;
     }
 
     public void setNome(String _nome) {
