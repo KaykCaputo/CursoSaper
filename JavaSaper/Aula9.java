@@ -29,18 +29,22 @@ public class Aula9 {
         o salário de todos os 20 funcionários de uma empresa.
         O programa deve mostrar o gasto da empresa com o salário dos funcionários.
          */
-        int counter = 0;
-        List<Double> salario = new ArrayList<>();
+        int i = 0;
+        Random gerador = new Random();
+
+        List<Double> salarios = new ArrayList<>();
         Scanner inputNum = new Scanner(System.in);
-        while (counter<=20){
+        while (i<20 &&inputNum.nextLine()!=null){
+            double salario = gerador.nextDouble(1320,20000);
+            /*
             System.out.println("Digite o salario do funcionario:\n");
-            salario.add(inputNum.nextDouble());
-            counter++;
+            salarios.add(inputNum.nextDouble());
+            */
+
+             System.out.printf("O Salario do funcionario é: %.2f\n", salario);
+             salarios.add(salario);
+            i++;
         }
-        double soma = 0;
-        for (double n : salario) {
-            soma += n;
-        }
-        System.out.printf("A o gasto da empresa com salarios é de: %.2f \nA media salarial é de: %.2f\n", soma, soma/salario.toArray().length);
+
     }
 }
